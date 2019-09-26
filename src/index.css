@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+h1{
+  font-family: sans-serif;
+  color: grey;
+}
+
+button{
+  height: 3rem;
+  width: 4rem;
+  border-radius: 3rem;
+}
