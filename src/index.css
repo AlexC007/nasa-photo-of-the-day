@@ -13,7 +13,7 @@ code {
 }
 
 h1{
-  font-family: sans-serif;
+  font-family: script;
   color: grey;
 }
 
@@ -21,4 +21,15 @@ button{
   height: 3rem;
   width: 4rem;
   border-radius: 3rem;
+  margin: 1rem;
+  background: white;
+
+}
+input{
+  border-radius: 2rem;
+  padding-left: 4rem;
+}
+span{
+  font-weight: bold;
+  padding-bottom: 5rem;
 }

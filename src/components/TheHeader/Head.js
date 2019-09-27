@@ -8,7 +8,7 @@ export default function Header (props) {
         <button
         className="button"
         onClick={() =>{
-          return props.func("left")  }}>&larr; Previous Day
+          return props.func("left")  }}> Previous Day
         </button>
 
         <input
@@ -20,7 +20,7 @@ export default function Header (props) {
 
         <button className="button" onClick={() =>{
           return props.func("right")
-        }}>Next Day &rarr;
+        }}>Next Day
         </button>
       </div>
 
