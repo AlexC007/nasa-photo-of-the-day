@@ -2,7 +2,17 @@ import "./App.css";
 import axios from "axios";
 import Header from "./components/TheHeader/Head";
 import React, { useState, useEffect } from "react";
+import styled from 'styled-components';
 
+const H1 = styled.h1`
+font-family: script;
+color: grey;
+`;
+
+ const Span = styled.span`
+ font-weight: bold;
+ padding-bottom: 5rem;
+  `;
 function App() {
   const apiKey = "LWqkJeogF0XlRhW24JU14v9sfWMelIH0BS97ldGZ";
   const [image, setImage] = useState('');
@@ -34,9 +44,9 @@ function App() {
 
   return (
     <div className="App">
-      <h1>  WELCOME TO NASA'S PHOTO OF THE DAY</h1>
+      <H1>  WELCOME TO NASA'S PHOTO OF THE DAY</H1>
       <Header image={image} date={date.toJSON().slice(0,10)} func={dateHandle}/>
-      <span>Today's Image is By: {image.copyright ? image.copyright : "Public Domain"} </span>
+      <Span>Today's Image is By: {image.copyright ? image.copyright : "Public Domain"} </Span>
     </div>
   );
 }
